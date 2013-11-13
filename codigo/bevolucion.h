@@ -53,7 +53,7 @@
 #define AU (int8_t)(Adenina<<4)|Uracilo
 #define UA (int8_t)(Uracilo<<4)|Adenina
 /* Maximo nucleotidos por gen  (maximo de pares de bases nitrogenadas complementarias) */
-#define MAX_NUC_GEN 15
+#define MAX_NUC_GEN 25
 /* Maximo numero de genes en el ADN */
 #define MAX_GENES 50
 /* Maximos hijos */
@@ -119,7 +119,9 @@ static uint8_t pares_bases_adn[4] = { AT, TA, CG, GC };
 static uint8_t pares_bases_arn[4] = { AU, UA, CG, GC };
 
 
+/* Contador de poblacion */
 
+static int32_t poblacion_nacida = 0 ;
 
 
 /* prototipos */

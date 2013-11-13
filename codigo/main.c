@@ -9,7 +9,7 @@ main (int argc, char **argv)
   celula *poblacion, hijo;
   celula padre, madre, menos_apto;
   char *gs, *elite_str;
-  int32_t ncromo = 4, ngenes = 10, habitantes = 10, pares_bases_x_gen = 10;
+  int32_t ncromo = 4, ngenes = 10, habitantes = 10, pares_bases_x_gen = 20;
   int32_t cromosoma_referencia = rand_int (ncromo);
   int32_t gen_referencia = rand_int (ngenes), si_se_integro;
   int32_t generacion = 0;

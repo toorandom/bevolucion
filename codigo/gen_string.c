@@ -7,7 +7,7 @@ gen_string (gen g)
 {
   int8_t *gs;
   int32_t i;
-  gs = calloc (sizeof (int8_t), MAX_NUC_GEN);
+  gs = calloc (sizeof (int8_t), MAX_NUC_GEN*2);
   for (i = 0; i < g.tamano; i++)
     memcpy (gs + (i * 2), nombre_par_base (g.par_bases[i]), 2);
 

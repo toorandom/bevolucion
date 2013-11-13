@@ -41,7 +41,9 @@ entrecruzamiento_adn_padres (celula * padre, celula * madre, celula * hijo,
 
 /* Metemos al final de su identidad la suma de los hijos que han tenido los padres previamente */
 
-  hijo->identidad += padre->num_hijos + madre->num_hijos;
+  hijo->identidad += padre->num_hijos + madre->num_hijos + poblacion_nacida;
+
+poblacion_nacida ++;
 
 
 /* Insertamos la identidad del nuevo hijo en ambos padres en la posicion final o inicial si es 0*/
