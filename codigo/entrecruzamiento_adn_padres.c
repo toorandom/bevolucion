@@ -5,6 +5,8 @@
  */
 #include "bevolucion.h"
 
+extern int32_t poblacion_nacida;
+
 /* Al reproducirse generaremos una nueva celula con aproximadamente la mitad de genes del padre y madre */
 celula *
 entrecruzamiento_adn_padres (celula * padre, celula * madre, celula * hijo,

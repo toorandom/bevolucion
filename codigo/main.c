@@ -1,7 +1,11 @@
 /*
  * Aqui se implementa el algoritmo que se ve en el LEEME.txt
  */
+
+
 #include "bevolucion.h"
+
+extern int32_t poblacion_nacida;
 int
 main (int argc, char **argv)
 {
@@ -15,7 +19,7 @@ main (int argc, char **argv)
   int32_t generacion = 0;
   gen gen_elite_referencia = gen_aleatorio (pares_bases_x_gen);
 
-
+  poblacion_nacida = 0;
 
   gCromo_ref = cromosoma_referencia;
   gGen_ref = gen_referencia;

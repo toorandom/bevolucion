@@ -121,7 +121,7 @@ static uint8_t pares_bases_arn[4] = { AU, UA, CG, GC };
 
 /* Contador de poblacion */
 
-static int32_t poblacion_nacida = 0 ;
+int32_t poblacion_nacida ;
 
 
 /* prototipos */
